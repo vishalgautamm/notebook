@@ -13,7 +13,8 @@ const StandupType = require('./standup_type')
 // TO DO: Need to implement the following mutation features:
 // -- addMeetingNote (DONE)
 // -- addCommentToMessages (DONE)
-// -- likeComment and
+// -- likeComment (DONE)
+// -- deleteComment (DONE)
 // -- deleteMessage
 
 // TO DO: Future: May be add delete comment as well
@@ -64,7 +65,14 @@ const mutation = new GraphQLObjectType({
 		deleteComment: {
 			type: NoteType,
 			args: { id: { type: GraphQLID } },
-			resolve: (parentVal, { id }) => Note.remove({ _id: id })
+			resolve: (_, { id }) => Note.remove({ _id: id })
+		},
+
+		// Users can delete their messages
+		deleteMessage: {
+			type: StandupType,
+			args: { id: { type: GraphQLID } },
+			resolve: (_, { id }) => Standup.remove({ _id: id })
 		}
 	}
 })
