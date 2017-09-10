@@ -10,6 +10,14 @@ const Standup = mongoose.model('standup')
 const NoteType = require('./note_type')
 const StandupType = require('./standup_type')
 
+// TO DO: Need to implement the following mutation features:
+// -- addMeetingNote (DONE)
+// -- addCommentToMessages,
+// -- likeComment and
+// -- deleteMessage
+
+// TO DO: Future: May be add delete comment as well
+
 const mutation = new GraphQLObjectType({
 	name: 'Mutation',
 	fields: {
@@ -34,6 +42,15 @@ const mutation = new GraphQLObjectType({
 					impediment
 				}).save()
 			}
+		},
+		addNoteToMeetingNote: {
+			type: StandupType,
+			args: {
+				content: { type: GraphQLString },
+				messageId: { type: GraphQLID }
+			},
+			resolve: (_, { content, messageId }) =>
+				Standup.addNote(messageId, content)
 		}
 	}
 })
