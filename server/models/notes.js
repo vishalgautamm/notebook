@@ -28,4 +28,12 @@ NotesSchema.statics.dislike = function(id) {
 	})
 }
 
+NotesSchema.statics.updateComment = function(id, content) {
+	const Note = mongoose.model('note')
+	return Note.findById(id).then(note => {
+		note.content = content
+		return note.save()
+	})
+}
+
 module.exports = mongoose.model('note', NotesSchema)

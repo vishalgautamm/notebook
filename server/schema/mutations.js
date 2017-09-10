@@ -81,6 +81,16 @@ const mutation = new GraphQLObjectType({
 			type: StandupType,
 			args: { id: { type: GraphQLID } },
 			resolve: (_, { id }) => Standup.remove({ _id: id })
+		},
+
+		// Users can update/edit their comment
+		updateComment: {
+			type: NoteType,
+			args: {
+				id: { type: GraphQLID },
+				content: { type: GraphQLString }
+			},
+			resolve: (_, { id, content }) => Note.updateComment(id, content)
 		}
 	}
 })
