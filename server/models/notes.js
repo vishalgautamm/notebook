@@ -12,6 +12,9 @@ const NotesSchema = new Schema({
 	createdOn: { type: Date, default: Date.now }
 })
 
+// Fetures
+// Users can like, dislike, update and delete comments (CRUD)
+
 NotesSchema.statics.like = function(id) {
 	const Note = mongoose.model('note')
 	return Note.findById(id).then(note => {
