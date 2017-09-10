@@ -12,7 +12,7 @@ const StandupType = require('./standup_type')
 
 // TO DO: Need to implement the following mutation features:
 // -- addMeetingNote (DONE)
-// -- addCommentToMessages,
+// -- addCommentToMessages (DONE)
 // -- likeComment and
 // -- deleteMessage
 
@@ -51,6 +51,11 @@ const mutation = new GraphQLObjectType({
 			},
 			resolve: (_, { content, messageId }) =>
 				Standup.addNote(messageId, content)
+		},
+		likeComment: {
+			type: NoteType,
+			args: { id: { type: GraphQLID } },
+			resolve: (_, { id }) => Note.like(id)
 		}
 	}
 })
