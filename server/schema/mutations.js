@@ -21,6 +21,7 @@ const StandupType = require('./standup_type')
 const mutation = new GraphQLObjectType({
 	name: 'Mutation',
 	fields: {
+		// Users can create their own meeting note
 		addMeetingNote: {
 			type: StandupType,
 			args: {
@@ -43,6 +44,7 @@ const mutation = new GraphQLObjectType({
 				}).save()
 			}
 		},
+		// Users can add comments/notes to meetingNotes
 		addNoteToMeetingNote: {
 			type: StandupType,
 			args: {
@@ -52,6 +54,7 @@ const mutation = new GraphQLObjectType({
 			resolve: (_, { content, messageId }) =>
 				Standup.addNote(messageId, content)
 		},
+		// Users can like comments that they / others posted
 		likeComment: {
 			type: NoteType,
 			args: { id: { type: GraphQLID } },
