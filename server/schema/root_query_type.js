@@ -16,9 +16,7 @@ const RootQuery = new GraphQLObjectType({
 	fields: () => ({
 		standups: {
 			type: new GraphQLList(StandupType),
-			resolve() {
-				Standup.find({})
-			}
+			resolve: () => Standup.find({})
 		},
 		standup: {
 			type: StandupType,
