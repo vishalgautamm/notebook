@@ -59,6 +59,12 @@ const mutation = new GraphQLObjectType({
 			type: NoteType,
 			args: { id: { type: GraphQLID } },
 			resolve: (_, { id }) => Note.like(id)
+		},
+		// Users can delete their own comments
+		deleteComment: {
+			type: NoteType,
+			args: { id: { type: GraphQLID } },
+			resolve: (parentVal, { id }) => Note.remove({ _id: id })
 		}
 	}
 })
