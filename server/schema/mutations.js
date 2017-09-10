@@ -14,6 +14,7 @@ const StandupType = require('./standup_type')
 // -- addMeetingNote (DONE)
 // -- addCommentToMessages (DONE)
 // -- likeComment (DONE)
+// -- dislikeComment
 // -- deleteComment (DONE)
 // -- deleteMessage
 
@@ -60,6 +61,13 @@ const mutation = new GraphQLObjectType({
 			type: NoteType,
 			args: { id: { type: GraphQLID } },
 			resolve: (_, { id }) => Note.like(id)
+		},
+
+		// Users can dislike comments that they / others posted
+		dislikeComment: {
+			type: NoteType,
+			args: { id: { type: GraphQLID } },
+			resolve: (_, { id }) => Note.dislike(id)
 		},
 		// Users can delete their own comments
 		deleteComment: {
