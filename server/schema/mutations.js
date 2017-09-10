@@ -91,6 +91,16 @@ const mutation = new GraphQLObjectType({
 				content: { type: GraphQLString }
 			},
 			resolve: (_, { id, content }) => Note.updateComment(id, content)
+		},
+
+		// Users can update/edit their project name
+		updateProject: {
+			type: StandupType,
+			args: {
+				id: { type: GraphQLID },
+				title: { type: GraphQLString }
+			},
+			resolve: (_, { id, title }) => Standup.updateMessage(id, title)
 		}
 	}
 })

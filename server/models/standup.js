@@ -35,5 +35,14 @@ StandupSchema.statics.findNotes = function(id) {
 		.then(standup => standup.notes)
 }
 
+// Update messages
+StandupSchema.statics.updateMessage = function(id, updatedTitle) {
+	const Standup = mongoose.model('standup')
+	return Standup.findById(id).then(message => {
+		message.project = updatedTitle
+		return message.save()
+	})
+}
+
 // Expose (Export) the model
 module.exports = mongoose.model('standup', StandupSchema)
