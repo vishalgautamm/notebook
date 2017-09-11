@@ -11,7 +11,7 @@ const Landing = () => (
 			A modern productivity tool for your needs{' '}
 		</p>
 		<button className="Landing-Main-Button">
-			<Link to={'/messages'}>Get Started</Link>
+			<Link to={'/signup'}>Get Started</Link>
 		</button>
 	</div>
 )

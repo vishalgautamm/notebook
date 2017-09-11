@@ -18,10 +18,10 @@ class Header extends Component {
 						<Link to="/messages">Messages</Link>
 					</li>
 					<li className="nav-item">
-						<Link to="/"> Sign up</Link>
+						<Link to="/signup"> Sign up</Link>
 					</li>
 					<li className="nav-item">
-						<Link to="/"> Sign in</Link>
+						<Link to="/signin"> Sign in</Link>
 					</li>
 				</ul>
 			</header>
