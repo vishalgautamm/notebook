@@ -37,7 +37,21 @@ describe('Delete a standup post', () => {
 			})
 	})
 
-	it('class method find and remove', () => {})
+	it('class method find and remove', done => {
+		Standup.findOneAndRemove({ memberName: 'John Doe' })
+			.then(() => Standup.findOne({ memberName: 'John Doe' }))
+			.then(user => {
+				assert(user === null)
+				done()
+			})
+	})
 
-	it('class method findById and remove', () => {})
+	it('class method findById and remove', done => {
+		Standup.findByIdAndRemove(john._id)
+			.then(() => Standup.findOne({ memberName: 'John Doe' }))
+			.then(user => {
+				assert(user === null)
+				done()
+			})
+	})
 })
