@@ -14,9 +14,9 @@ class Header extends Component {
 					<li className="nav-item selected">
 						<Link to="/">Home</Link>
 					</li>
-					<li className="nav-item">
+					{/* <li className="nav-item">
 						<Link to="/messages">Messages</Link>
-					</li>
+					</li> */}
 					<li className="nav-item">
 						<Link to="/signup"> Sign up</Link>
 					</li>
