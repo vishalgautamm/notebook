@@ -1,9 +1,9 @@
 import React from 'react'
 
-const NewMessage = () => (
+const ProjectCreate = () => (
 	<div>
 		<p> Create a new message </p>
 	</div>
 )
 
-export default NewMessage
+export default ProjectCreate
