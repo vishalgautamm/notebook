@@ -39,4 +39,6 @@ NotesSchema.statics.updateComment = function(id, content) {
 	})
 }
 
-module.exports = mongoose.model('note', NotesSchema)
+const Note = mongoose.model('note', NotesSchema)
+
+module.exports = Note
