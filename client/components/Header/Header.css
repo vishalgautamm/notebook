@@ -37,7 +37,8 @@ Basic Styling
 
 .nav-wrapper {
 	padding: 0.5rem 1rem;
-	background: #f4f4f4;
+	margin: 0% 10%;
+	/*background: #f4f4f4;*/
 }
 
 .brand-logo {

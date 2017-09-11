@@ -1,0 +1,24 @@
+/*
+Styling
+*/
+
+.Footer-Main {
+	background-color: rgba(134, 134, 134, 0.1);
+	height: 50px;
+}
+
+.Footer-Main p {
+	color: rgba(78, 29, 144, 0.66);
+	font-size: 0.7rem;
+	padding-top: 1rem;
+}
+
+/*
+Layout
+*/
+
+.Footer-Main p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

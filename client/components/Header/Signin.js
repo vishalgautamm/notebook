@@ -1,8 +1,12 @@
+import './Signin.css'
+
 import React from 'react'
+import { Link } from 'react-router'
 
 const Signin = () => (
-	<div>
-		<h1> This is a Signin Page </h1>
+	<div className="Signin-Component">
+		<h1 className="Signin-Header"> Sign In </h1>
+		<Link to="/signup"> Have an account? </Link>
 	</div>
 )
 
