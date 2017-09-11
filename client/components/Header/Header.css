@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:300,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:700,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600');
+
+/*
+Hover color : #a562c1
+Main Color: #8e44ad
+*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Open Sans', 'Lato', sans-serif;
+	line-height: 1.5;
+	font-size: 1rem;
+	color: #373a3c;
+	background-color: #fffff5;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	color: #9c9c9c;
+	text-decoration: none;
+	font-weight: 300;
+}
+
+/*****
+Basic Styling
+*****/
+
+.nav-wrapper {
+	padding: 0.5rem 1rem;
+	margin-bottom: 100px;
+	border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.brand-logo {
+	margin-top: 10px;
+}
+
+.brand-logo a,
+.brand-logo a:hover,
+.brand-logo a:active {
+	color: #8e44ad;
+	font-size: 1.8rem;
+	font-weight: 400;
+	/*font-family: 'Droid Serif', serif;*/
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.nav li {
+	margin: 0 10px;
+	list-style: none;
+}
+
+a:active,
+a:hover {
+	color: #a562c1;
+}
+
+li.selected a {
+	color: #4f4f4f;
+	font-weight: bold;
+}
+
+/*****
+Style Layout
+*****/
+@media screen and (min-width: 400px) {
+	.nav {
+		margin-top: 20px;
+		margin-left: 10px;
+	}
+}
+
+/*****
+Layout
+*****/
+
+@media screen and (min-width: 400px) {
+	.nav-wrapper,
+	.nav {
+		display: flex;
+	}
+
+	.nav-wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.nav {
+		justify-content: space-around;
+	}
+}
+
+@media screen and (min-width: 1050px) {
+	.nav-wrapper {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
