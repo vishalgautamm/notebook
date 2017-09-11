@@ -11,9 +11,17 @@ before(done => {
 		.on('error', err => console.warn('Error: ', err))
 })
 
-// This will drop all the collections before the test runs
+// This will drop all the Message collections before the test runs
 beforeEach(done => {
 	mongoose.connection.collections.standups.drop(() => {
+		// you can now run the next test
+		done()
+	})
+})
+
+// This will drop all the comment/note collection before the test runs
+beforeEach(done => {
+	mongoose.connection.collections.notes.drop(() => {
 		// you can now run the next test
 		done()
 	})

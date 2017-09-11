@@ -13,3 +13,20 @@ describe('Creating comment records', () => {
 		})
 	})
 })
+
+// Reading a comment test
+describe('Reading comments out of the database', () => {
+	let sample
+	beforeEach(done => {
+		sample = new Note({
+			content: 'Hello World'
+		})
+		sample.save().then(() => done())
+	})
+	it('finds all the comments', done => {
+		Note.find({ content: 'Hello World' }).then(result => {
+			assert(result[0]._id.toString() === sample._id.toString())
+			done()
+		})
+	})
+})
