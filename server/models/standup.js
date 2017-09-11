@@ -45,4 +45,5 @@ StandupSchema.statics.updateMessage = function(id, updatedTitle) {
 }
 
 // Expose (Export) the model
-module.exports = mongoose.model('standup', StandupSchema)
+const Standup = mongoose.model('standup', StandupSchema)
+module.exports = Standup
