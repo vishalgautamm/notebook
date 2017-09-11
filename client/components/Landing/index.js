@@ -8,10 +8,13 @@ const Landing = () => (
 		<h1 className="Landing-Main-logo"> Notebook </h1>
 		<p className="Landing-Main-message">
 			{' '}
-			A modern productivity tool for your needs{' '}
+			Notebook is a modern productivity tool that enables you to easily create
+			and share your project notes with your co-workers {' '}
 		</p>
 		<button className="Landing-Main-Button">
-			<Link to={'/signup'}>Get Started</Link>
+			<Link className="btn" to={'/signup'}>
+				Get Started
+			</Link>
 		</button>
 	</div>
 )

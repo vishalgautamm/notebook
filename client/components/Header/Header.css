@@ -37,20 +37,25 @@ Basic Styling
 
 .nav-wrapper {
 	padding: 0.5rem 1rem;
+	background: #f4f4f4;
 }
 
 .brand-logo {
 	margin-top: 10px;
 }
 
-.brand-logo a,
-.brand-logo a:hover,
-.brand-logo a:active {
+.brand-logo a {
 	color: #8e44ad;
 	font-size: 1.8rem;
 	font-weight: 400;
 	/*font-family: 'Droid Serif', serif;*/
 	font-family: 'Titillium Web', sans-serif;
+}
+
+.brand-logo a:hover,
+.brand-logo a:active {
+	color: #974ab8;
+	transition: color 0.3s;
 }
 
 .nav li {
@@ -62,6 +67,7 @@ a:active,
 a:hover {
 	color: #a562c1;
 	font-weight: 400;
+	transition: color 0.3s;
 }
 
 li.selected a {
@@ -72,7 +78,8 @@ li.selected a {
 /*****
 Style Layout
 *****/
-@media screen and (min-width: 400px) {
+
+@media screen and (max-width: 400px) {
 	.nav {
 		margin-top: 20px;
 		margin-left: 10px;
@@ -83,7 +90,7 @@ Style Layout
 Layout
 *****/
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 800px) {
 	.nav-wrapper,
 	.nav {
 		display: flex;
@@ -103,5 +110,19 @@ Layout
 	.nav-wrapper {
 		flex-direction: row;
 		justify-content: space-between;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.nav-wrapper,
+	.nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.nav {
+		flex-direction: column;
 	}
 }

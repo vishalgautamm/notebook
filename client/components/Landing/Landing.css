@@ -3,6 +3,10 @@ Hover color : #a562c1
 Main Color: #8e44ad
 */
 
+/*
+Logo Color: #27ae60
+*/
+
 /*****
 Basic Styling
 *****/
@@ -14,25 +18,43 @@ Basic Styling
 }
 
 .Landing-Main-logo {
+	font-family: 'Titillium Web', sans-serif;
 	color: #f6f6f6;
+	/*color: #36d278;*/
 	font-weight: bold;
 	font-size: 70px;
 }
 
 .Landing-Main-message {
 	color: #f4f4f4;
+	width: 60%;
+	text-align: center;
+	margin-top: 10px;
 	font-size: 20px;
 }
 
 .Landing-Main-Button {
-	margin-top: 40px;
+	/*margin-top: 400px;*/
+	margin-top: 20px;
 	margin-bottom: 20px;
 	font-size: 16px;
 	width: 140px;
-	height: 45px;
-	background-color: #fff;
+	height: 50px;
+	background-color: #27ae60;
+	color: #fff;
 	border: 0px;
-	border-radius: 10px;
+	border-radius: 15px;
+}
+
+.Landing-Main-Button .btn {
+	color: #fff;
+}
+
+.Landing-Main-Button:hover {
+	color: #fff;
+	background-color: #2abc68;
+	border: 1px solid #acacac;
+	transition: background-color 0.3s;
 }
 
 /*****
@@ -44,4 +66,10 @@ Layout
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+	.Landing-Main-logo {
+		font-size: 50px;
+	}
 }
