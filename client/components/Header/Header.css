@@ -37,7 +37,6 @@ Basic Styling
 
 .nav-wrapper {
 	padding: 0.5rem 1rem;
-	margin-bottom: 100px;
 	border-bottom: 1px solid rgb(219, 219, 219);
 }
 
@@ -63,6 +62,7 @@ Basic Styling
 a:active,
 a:hover {
 	color: #a562c1;
+	font-weight: 400;
 }
 
 li.selected a {
