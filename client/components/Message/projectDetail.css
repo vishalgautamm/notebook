@@ -6,16 +6,16 @@
 .projectDetail-backButton {
 	color: #219251;
 	font-size: 1.5rem;
-	margin-bottom: 10px;
+	margin-bottom: 0.625rem;
 }
 
 .projectDetail-author {
-	margin-bottom: 10px;
+	margin-bottom: 0.625rem;
 	font-style: italic;
 }
 
 .project-Comments {
-	margin-top: 2%;
+	margin-top: 5%;
 }
 
 /*
