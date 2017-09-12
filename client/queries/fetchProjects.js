@@ -7,6 +7,7 @@ export default gql`
 			project
 			memberName
 			createdOn
+			slug
 		}
 	}
 `

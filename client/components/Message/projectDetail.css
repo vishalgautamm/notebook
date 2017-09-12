@@ -27,6 +27,10 @@ Comment Component Layout
 	flex-direction: column;
 }
 
+.projectDetail-impediments {
+	font-size: 1rem;
+}
+
 .project-Comments {
 	display: flex;
 }

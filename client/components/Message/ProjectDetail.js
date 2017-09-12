@@ -1,8 +1,9 @@
-import './projectDetail.css'
-
 import React, { Component } from 'react'
 import { graphql } from 'react-apollo'
 import { Link } from 'react-router'
+import { emojify } from 'react-emojione'
+
+import './projectDetail.css'
 import fetchProjectById from '../../queries/fetchProjectById'
 
 class ProjectDetail extends Component {
@@ -10,7 +11,7 @@ class ProjectDetail extends Component {
 		const { standup } = this.props.data
 
 		return !standup ? (
-			<div>Loading ....</div>
+			<div />
 		) : (
 			<div className="projectDetail">
 				<Link className="projectDetail-backButton" to="/projects">
@@ -22,7 +23,9 @@ class ProjectDetail extends Component {
 				<p className="projectDetail-author">{standup.memberName}</p>
 				<p>Work Today: {standup.workToday}</p>
 				<p> Work Yesterday: {standup.workYesterday} </p>
-				<p>impediments: {standup.impediment}</p>
+				<p className="projectDetail-impediments">
+					impediments: {emojify(standup.impediment)}
+				</p>
 
 				<div className="project-Comments">
 					<h2>Comments List</h2>

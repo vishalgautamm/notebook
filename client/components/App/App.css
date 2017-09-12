@@ -1,5 +1,5 @@
 /*
-Global Stying 
+Global Stying
 */
 
 ::selection {
@@ -7,9 +7,7 @@ Global Stying
 }
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
-@import url('https://fonts.googleapis.com/css?family=Droid+Serif:300,400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:700,900');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600');
 
 /*
 Hover color : #a562c1
@@ -21,7 +19,7 @@ Main Color: #8e44ad
 	padding: 0;
 }
 body {
-	font-family: 'Open Sans', 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif;
 	line-height: 1.5;
 	font-size: 1rem;
 	color: #373a3c;
@@ -36,7 +34,6 @@ ul {
 a {
 	color: #9c9c9c;
 	text-decoration: none;
-	font-weight: 400;
 }
 
 /*

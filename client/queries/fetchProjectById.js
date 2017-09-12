@@ -5,6 +5,7 @@ export default gql`
 		standup(id: $id) {
 			id
 			memberName
+			slug
 			project
 			workYesterday
 			workToday

@@ -1,0 +1,91 @@
+// Settings - Global
+// =================
+// This holds functions, breakpoints, etc.
+
+// - #fonts
+// - #breakpoints
+
+// ------------
+// Fonts #fonts
+// ------------
+// This CSS was generated via https://google-webfonts-helper.herokuapp.com/fonts/lato?subsets=latin
+// Downloaded for "Modern Browsers", assuming PostCSS has our back here
+
+// == LATO ==
+
+/* lato-300 - latin */
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/lato/lato-v13-latin-300.eot'); /* IE9 Compat Modes */
+	src: local('Lato Light'), local('Lato-Light'),
+		url('../fonts/lato/lato-v13-latin-300.eot?#iefix')
+			format('embedded-opentype'),
+		url('../fonts/lato/lato-v13-latin-300.woff2') format('woff2'),
+		url('../fonts/lato/lato-v13-latin-300.woff') format('woff'),
+		url('../fonts/lato/lato-v13-latin-300.ttf') format('truetype'),
+		url('../fonts/lato/lato-v13-latin-300.svg#Lato') format('svg'); /* Legacy iOS */
+}
+/* lato-regular - latin */
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/lato/lato-v13-latin-regular.eot'); /* IE9 Compat Modes */
+	src: local('Lato Regular'), local('Lato-Regular'),
+		url('../fonts/lato/lato-v13-latin-regular.eot?#iefix')
+			format('embedded-opentype'),
+		url('../fonts/lato/lato-v13-latin-regular.woff2') format('woff2'),
+		url('../fonts/lato/lato-v13-latin-regular.woff') format('woff'),
+		url('../fonts/lato/lato-v13-latin-regular.ttf') format('truetype'),
+		url('../fonts/lato/lato-v13-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
+}
+/* lato-italic - latin */
+@font-face {
+	font-family: 'Lato';
+	font-style: italic;
+	font-weight: 400;
+	src: url('../fonts/lato/lato-v13-latin-italic.eot'); /* IE9 Compat Modes */
+	src: local('Lato Italic'), local('Lato-Italic'),
+		url('../fonts/lato/lato-v13-latin-italic.eot?#iefix')
+			format('embedded-opentype'),
+		url('../fonts/lato/lato-v13-latin-italic.woff2') format('woff2'),
+		url('../fonts/lato/lato-v13-latin-italic.woff') format('woff'),
+		url('../fonts/lato/lato-v13-latin-italic.ttf') format('truetype'),
+		url('../fonts/lato/lato-v13-latin-italic.svg#Lato') format('svg'); /* Legacy iOS */
+}
+/* lato-700 - latin */
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/lato/lato-v13-latin-700.eot'); /* IE9 Compat Modes */
+	src: local('Lato Bold'), local('Lato-Bold'),
+		url('../fonts/lato/lato-v13-latin-700.eot?#iefix')
+			format('embedded-opentype'),
+		url('../fonts/lato/lato-v13-latin-700.woff2') format('woff2'),
+		url('../fonts/lato/lato-v13-latin-700.woff') format('woff'),
+		url('../fonts/lato/lato-v13-latin-700.ttf') format('truetype'),
+		url('../fonts/lato/lato-v13-latin-700.svg#Lato') format('svg'); /* Legacy iOS */
+}
+
+// == TITILLIUM - Logo Font ==
+
+/* titillium-web-regular - latin */
+@font-face {
+	font-family: 'Titillium Web';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/titillium/titillium-web-v5-latin-regular.eot'); /* IE9 Compat Modes */
+	src: local('Titillium Web Regular'), local('TitilliumWeb-Regular'),
+		url('../fonts/titillium/titillium-web-v5-latin-regular.eot?#iefix')
+			format('embedded-opentype'),
+		url('../fonts/titillium/titillium-web-v5-latin-regular.woff2')
+			format('woff2'),
+		url('../fonts/titillium/titillium-web-v5-latin-regular.woff') format('woff'),
+		url('../fonts/titillium/titillium-web-v5-latin-regular.ttf')
+			format('truetype'),
+		url('../fonts/titillium/titillium-web-v5-latin-regular.svg#TitilliumWeb')
+			format('svg'); /* Legacy iOS */
+}
