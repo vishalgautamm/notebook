@@ -12,6 +12,13 @@
 
 // == GENERIC ==
 @import 'typography';
+@import 'basicsetup.global';
 
 // == LAYOUT ==
-@import 'pagelayout.global';
+@import 'layouts/layout.global';
+@import 'layouts/layout.header';
+@import 'layouts/layout.footer';
+@import 'layouts/layout.landing';
+@import 'layouts/layout.auth';
+// @import 'layouts/layout.projectList';
+@import 'layouts/layout.projectDetail';

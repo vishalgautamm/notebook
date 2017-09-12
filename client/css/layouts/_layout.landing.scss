@@ -1,0 +1,26 @@
+/*****
+Layout
+*****/
+
+.Landing-Main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+	/*.Landing-Main-logo {
+		font-size: 3.125rem;
+	}*/
+
+	.Landing-Main-message {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.Landing-Main-message {
+		width: 90%;
+	}
+}

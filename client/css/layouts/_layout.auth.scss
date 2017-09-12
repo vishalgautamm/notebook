@@ -1,0 +1,10 @@
+/*****
+SignIn and Signup Layout
+*****/
+.Signin-Component,
+.Signup-Component {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}

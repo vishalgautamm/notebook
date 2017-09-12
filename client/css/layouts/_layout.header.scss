@@ -1,0 +1,40 @@
+/*****
+Header Layout
+*****/
+
+@media screen and (min-width: 800px) {
+	.nav-wrapper,
+	.nav {
+		display: flex;
+	}
+
+	.nav-wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.nav {
+		justify-content: space-around;
+	}
+}
+
+@media screen and (min-width: 1050px) {
+	.nav-wrapper {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.nav-wrapper,
+	.nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.nav {
+		flex-direction: column;
+	}
+}
