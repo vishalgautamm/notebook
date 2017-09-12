@@ -2,10 +2,13 @@
 Basic Styling
 *****/
 
+.nav-container {
+	background: rgba(169, 62, 244, 0.03);
+}
+
 .nav-wrapper {
 	padding: 0.5rem 1rem;
 	margin: 0% 10%;
-	/*background: #f4f4f4;*/
 }
 
 .brand-logo {

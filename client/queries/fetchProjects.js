@@ -6,9 +6,6 @@ export default gql`
 			id
 			project
 			memberName
-			workYesterday
-			workToday
-			impediment
 			createdOn
 		}
 	}

@@ -2,3 +2,30 @@
 	margin: 0 10%;
 	padding: 0.5rem 1rem;
 }
+
+/*
+Project List Styling
+*/
+
+.projectlist-item {
+	margin-top: 3%;
+}
+
+.projectlist-item-title h1 a {
+	color: rgba(4, 4, 4, 0.86);
+	font-weight: bold;
+}
+
+.projectlist-item-title h1 a:hover {
+	color: #219251;
+}
+
+.projectlist-item-author {
+	font-style: italic;
+	color: #8e44ad;
+}
+
+.projectlist-item-createdOn {
+	font-size: 10px;
+	color: #b4b4b4;
+}

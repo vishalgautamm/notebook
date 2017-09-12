@@ -12,6 +12,7 @@ import Signup from './components/Header/Signup'
 import ProjectList from './components/Message/ProjectList'
 
 import ProjectCreate from './components/Message/ProjectCreate'
+import ProjectDetail from './components/Message/ProjectDetail'
 
 const client = new ApolloClient({
 	dataIdFromObject: object => object.id
@@ -26,6 +27,7 @@ const Root = () => (
 				<Route path="signin" component={Signin} />
 				<Route path="signup" component={Signup} />
 				<Route path="projects/new" component={ProjectCreate} />
+				<Route path="projects/:id" component={ProjectDetail} />
 			</Route>
 		</Router>
 	</ApolloProvider>

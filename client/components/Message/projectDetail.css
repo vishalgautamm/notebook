@@ -1,0 +1,32 @@
+.projectDetail {
+	margin: 0 10%;
+	padding: 0.5rem 1rem;
+}
+
+.projectDetail-backButton {
+	color: #219251;
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+}
+
+.projectDetail-author {
+	margin-bottom: 10px;
+	font-style: italic;
+}
+
+.project-Comments {
+	margin-top: 2%;
+}
+
+/*
+Comment Component Layout
+*/
+
+.projectDetail {
+	display: flex;
+	flex-direction: column;
+}
+
+.project-Comments {
+	display: flex;
+}
