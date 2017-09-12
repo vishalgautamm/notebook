@@ -89,3 +89,12 @@
 		url('../fonts/titillium/titillium-web-v5-latin-regular.svg#TitilliumWeb')
 			format('svg'); /* Legacy iOS */
 }
+
+// ------------------------
+// Breakpoints
+// ------------------------
+// NOTE: These are the purecss defaults
+$sm: 480px;
+$md: 767px;
+$lg: 1023px;
+$xl: 1200px;
