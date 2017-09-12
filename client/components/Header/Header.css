@@ -12,7 +12,7 @@ Basic Styling
 }
 
 .brand-logo {
-	margin-top: 10px;
+	margin-top: 0.625rem;
 }
 
 .brand-logo a {
@@ -31,7 +31,7 @@ a:hover {
 }
 
 .nav li {
-	margin: 0 10px;
+	margin: 0 0.625rem;
 	list-style: none;
 }
 
@@ -51,9 +51,8 @@ Style Layout
 *****/
 
 @media screen and (max-width: 400px) {
-	.nav {
-		margin-top: 20px;
-		margin-left: 10px;
+	.nav li {
+		margin-top: 1.25rem;
 	}
 }
 

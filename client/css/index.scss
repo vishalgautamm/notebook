@@ -7,18 +7,9 @@
 
 // == SETTINGS ==
 @import 'settings.colors';
-@import 'seetings.global';
-
-// == TOOLS ==
+@import 'settings.global';
+@import 'settings.metrics';
 
 // == GENERIC ==
 
-// == OBJECTS ==
-
-// == LAYOUT ==
-
-// == REUSABLE-COMPONENTS ==
-
-// == INDIVIDUAL COMPONENTS ==
-
-// == SPECIAL COMPONENT - ANIMATION ==
+@import 'typography';
