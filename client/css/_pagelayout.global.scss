@@ -1,0 +1,24 @@
+/*
+Global Stying
+*/
+
+::selection {
+	background: $algae-green;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	color: $dusty-grey;
+	text-decoration: none;
+}
