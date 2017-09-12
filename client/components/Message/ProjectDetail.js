@@ -35,16 +35,3 @@ class ProjectDetail extends Component {
 export default graphql(fetchProjectById, {
 	options: props => ({ variables: { id: props.params.id } })
 })(ProjectDetail)
-
-// createdOn, id,impediment,
-//
-// memberName,
-//
-//
-// notes,
-//
-// project,
-//
-// workToday,
-//
-// workYesterday,
