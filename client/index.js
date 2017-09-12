@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import './css/index.scss'
+import React from 'react'
 import ReactDOM from 'react-dom'
 
 import { Router, Route, hashHistory, IndexRoute } from 'react-router'

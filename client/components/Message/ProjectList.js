@@ -1,4 +1,3 @@
-import './ProjectList.css'
 import React, { Component } from 'react'
 import { graphql } from 'react-apollo'
 import { Link } from 'react-router'

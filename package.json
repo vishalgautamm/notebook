@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"scripts": {
 		"dev": "nodemon index.js --ignore client",
-		"test": "npm-run-all --parallel test:model test:schema",
+		"test": "npm-run-all --parallel test:model test:schema test:client",
 		"test:model": "nodemon --exec './node_modules/mocha/bin/mocha server/models/__tests_ -R min'",
 		"test:schema": "./node_modules/mocha/bin/mocha server/schema/__tests_",
 		"test:client": "jest"
@@ -25,6 +25,7 @@
 		"express": "^4.15.4",
 		"express-graphql": "^0.6.11",
 		"express-session": "^1.15.5",
+		"file-loader": "^0.11.2",
 		"graphql": "^0.11.3",
 		"graphql-tag": "^2.4.2",
 		"html-webpack-plugin": "^2.26.0",
@@ -33,6 +34,7 @@
 		"mocha": "^3.5.2",
 		"moment": "^2.18.1",
 		"mongoose": "^4.11.10",
+		"node-sass": "^4.5.3",
 		"passport": "^0.3.2",
 		"passport-local": "^1.0.0",
 		"react": "15.4.2",
@@ -40,7 +42,9 @@
 		"react-dom": "15.4.2",
 		"react-emojione": "^3.1.10",
 		"react-router": "^3.0.2",
+		"sass-loader": "^6.0.6",
 		"style-loader": "^0.13.1",
+		"url-loader": "^0.5.9",
 		"webpack": "^2.2.0",
 		"webpack-dev-middleware": "^1.9.0"
 	},

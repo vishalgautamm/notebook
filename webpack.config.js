@@ -1,4 +1,4 @@
-const webpack = require('webpack')
+// const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
@@ -21,8 +21,12 @@ module.exports = {
 				exclude: /node_modules/
 			},
 			{
-				use: ['style-loader', 'css-loader'],
-				test: /\.css$/
+				test: /\.(ttf|eot|woff|woff2|svg)$/,
+				loader: 'file-loader'
+			},
+			{
+				use: ['style-loader', 'css-loader', 'sass-loader'],
+				test: /\.s?css$/
 			}
 		]
 	},

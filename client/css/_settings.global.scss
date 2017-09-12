@@ -72,21 +72,34 @@
 
 // == TITILLIUM - Logo Font ==
 
-/* titillium-web-regular - latin */
+/* titillium-web-700 - latin */
 @font-face {
 	font-family: 'Titillium Web';
 	font-style: normal;
-	font-weight: 400;
-	src: url('../fonts/titillium/titillium-web-v5-latin-regular.eot'); /* IE9 Compat Modes */
-	src: local('Titillium Web Regular'), local('TitilliumWeb-Regular'),
-		url('../fonts/titillium/titillium-web-v5-latin-regular.eot?#iefix')
+	font-weight: 700;
+	src: url('../fonts/titillium/titillium-web-v5-latin-700.eot'); /* IE9 Compat Modes */
+	src: local('Titillium Web Bold'), local('TitilliumWeb-Bold'),
+		url('../fonts/titillium/titillium-web-v5-latin-700.eot?#iefix')
 			format('embedded-opentype'),
-		url('../fonts/titillium/titillium-web-v5-latin-regular.woff2')
-			format('woff2'),
-		url('../fonts/titillium/titillium-web-v5-latin-regular.woff') format('woff'),
-		url('../fonts/titillium/titillium-web-v5-latin-regular.ttf')
-			format('truetype'),
-		url('../fonts/titillium/titillium-web-v5-latin-regular.svg#TitilliumWeb')
+		url('../fonts/titillium/titillium-web-v5-latin-700.woff2') format('woff2'),
+		url('../fonts/titillium/titillium-web-v5-latin-700.woff') format('woff'),
+		url('../fonts/titillium/titillium-web-v5-latin-700.ttf') format('truetype'),
+		url('../fonts/titillium/titillium-web-v5-latin-700.svg#TitilliumWeb')
+			format('svg'); /* Legacy iOS */
+}
+/* titillium-web-900 - latin */
+@font-face {
+	font-family: 'Titillium Web';
+	font-style: normal;
+	font-weight: 900;
+	src: url('../fonts/titillium/titillium-web-v5-latin-900.eot'); /* IE9 Compat Modes */
+	src: local('Titillium Web Black'), local('TitilliumWeb-Black'),
+		url('../fonts/titillium/titillium-web-v5-latin-900.eot?#iefix')
+			format('embedded-opentype'),
+		url('../fonts/titillium/titillium-web-v5-latin-900.woff2') format('woff2'),
+		url('../fonts/titillium/titillium-web-v5-latin-900.woff') format('woff'),
+		url('../fonts/titillium/titillium-web-v5-latin-900.ttf') format('truetype'),
+		url('../fonts/titillium/titillium-web-v5-latin-900.svg#TitilliumWeb')
 			format('svg'); /* Legacy iOS */
 }
 

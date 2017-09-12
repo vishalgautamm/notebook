@@ -3,7 +3,6 @@ import { graphql } from 'react-apollo'
 import { Link } from 'react-router'
 import { emojify } from 'react-emojione'
 
-import './projectDetail.css'
 import fetchProjectById from '../../queries/fetchProjectById'
 
 class ProjectDetail extends Component {
