@@ -23,8 +23,10 @@ Basic Styling
 }
 
 .brand-logo a:hover,
-.brand-logo a:active {
-	color: #974ab8;
+.brand-logo a:active,
+a:active,
+a:hover {
+	color: #a562c1;
 	transition: color 0.3s;
 }
 
@@ -33,11 +35,11 @@ Basic Styling
 	list-style: none;
 }
 
-a:active,
+/*a:active,
 a:hover {
 	color: #a562c1;
 	transition: color 0.3s;
-}
+}*/
 
 li.selected a {
 	color: #4f4f4f;

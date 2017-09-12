@@ -1,0 +1,65 @@
+// Settings - Colors
+// ===============
+// What colors do we use in this app? They all go here. No exceptions
+
+// NOTE: Used this color naming tool to name our colors - http://chir.ag/projects/name-that-color/
+
+$algae-green: #89e5b0;
+// Global: ::selection >> background
+
+$ivory: #fffff5;
+// App: body >> background-color
+
+$studio: #8e44ad;
+// THEME/PRIMARY COLOR OF THIS APP
+// Header: .brand-logo a >> color
+// Project List: .projectlist-item-author >> color
+
+
+$amethyst: #a562c1;
+// Header: .brand-logo, nav >> active & hover
+
+$emperor: #4f4f4f;
+// Header: nav >> :selected
+
+$eminence: #66317C;
+// Landing Page: .Landing-Main >> background-color
+
+$wild-sand: #f6f6f6;
+// Landing Page:
+//  - .Landing-Main-Logo >> color
+//  - .Landing-Main-message >> color
+//  - .Landing-Main-Button .btn >> color
+
+$jungle-green: #27ae60;
+// Landing Page: .Landing-Main-Button .btn >> background-color
+
+$eucalyptus: #219251;
+// Landing Page: .Landing-Main-Button .btn:hover >> background-color
+
+$white: #ffffff;
+// Landing Page: .Landing-Main-Button .btn:hover >> color
+
+$silver-chalice: #acacac;
+// Landing Page: .Landing-Main-Button .btn:hover >> border
+
+$eucalyptus: #219251;
+// Project List Page: .projectlist-item-title h1 a:hover >> color
+// Project Detail Page: .projectDetail-backButton >> color
+
+$nobel: #b4b4b4;
+// Project List: .projectlist-item-createdOn >> color
+
+
+// ==== CUSTOM COLORS ===
+$nav-container: rgba(169, 62, 244, 0.03);
+// Header: nav-container >> background
+
+$projectlist-title-color: rgba(4, 4, 4, 0.86);
+// Project List: .projectlist-item-title >> color
+
+$footer-background-color: rgba(134, 134, 134, 0.1)
+// Footer: .footer-main >> background-color
+
+$footer-content-color: rgba(78, 29, 144, 0.66);
+// Footer: .footer-main p >> color
