@@ -1,0 +1,53 @@
+/*****
+Basic Styling
+*****/
+
+.nav-container {
+	background: rgba(169, 62, 244, 0.03);
+}
+
+.nav-wrapper {
+	padding: 0.5rem 1rem;
+	margin: 0% 10%;
+}
+
+.brand-logo a {
+	color: #8e44ad;
+	font-size: 1.8rem;
+	font-weight: 400;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.brand-logo a:hover,
+.brand-logo a:active,
+a:active,
+a:hover {
+	color: #a562c1;
+	transition: color 0.3s;
+}
+
+.nav li {
+	margin: 0 0.625rem;
+	list-style: none;
+}
+
+/*a:active,
+a:hover {
+	color: #a562c1;
+	transition: color 0.3s;
+}*/
+
+li.selected a {
+	color: #4f4f4f;
+	font-weight: bold;
+}
+
+/*****
+Style Layout
+*****/
+
+@media screen and (max-width: 400px) {
+	.nav li {
+		margin-top: 1.25rem;
+	}
+}

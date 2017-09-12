@@ -22,3 +22,11 @@
 @import 'layouts/layout.auth';
 // @import 'layouts/layout.projectList';
 @import 'layouts/layout.projectDetail';
+
+// == COMPONENTS ==
+@import 'components/main-header.scss';
+@import 'components/main-footer.scss';
+@import 'components/landing.scss';
+@import 'components/auth.scss';
+@import 'components/projectList';
+@import 'components/projectDetail';
