@@ -15,18 +15,7 @@
 @import 'basicsetup.global';
 
 // == COMPONENTS ==
-@import 'components/main-header.scss';
-@import 'components/main-footer.scss';
-@import 'components/landing.scss';
-@import 'components/auth.scss';
-@import 'components/projectList';
-@import 'components/projectDetail';
+@import 'components/*';
 
 // == LAYOUT ==
-@import 'layouts/layout.global';
-@import 'layouts/layout.header';
-@import 'layouts/layout.footer';
-@import 'layouts/layout.landing';
-@import 'layouts/layout.auth';
-// @import 'layouts/layout.projectList';
-@import 'layouts/layout.projectDetail';
+@import 'layouts/*';

@@ -9,6 +9,12 @@ Layout
 	align-items: center;
 }
 
+@media screen and (min-width: 1050px) {
+	.Landing-Main-message {
+		font-size: 1.65rem;
+	}
+}
+
 @media screen and (max-width: 767px) {
 	/*.Landing-Main-logo {
 		font-size: 3.125rem;
