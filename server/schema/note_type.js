@@ -3,7 +3,6 @@ const graphql = require('graphql')
 const { GraphQLObjectType, GraphQLID, GraphQLInt, GraphQLString } = graphql
 const moment = require('moment')
 const Note = mongoose.model('note')
-const timeStamp = require('../utils/')
 const NoteType = new GraphQLObjectType({
 	name: 'NoteType',
 	fields: () => ({
