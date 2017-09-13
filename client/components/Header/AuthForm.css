@@ -1,0 +1,9 @@
+/* color naming conventions using http://chir.ag/projects/name-that-color/*/
+* {
+	--monza: #d8000c;
+}
+
+.errors {
+	color: var(--monza);
+	margin-bottom: 20px;
+}

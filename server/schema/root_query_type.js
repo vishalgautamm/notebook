@@ -22,8 +22,7 @@ const RootQuery = new GraphQLObjectType({
 		},
 		user: {
 			type: UserType,
-			args: { id: { type: new GraphQLNonNull(GraphQLID) } },
-			resolve: (_, { id }) => User.findById(id)
+			resolve: (parentVal, args, req) => req.user
 		},
 		standups: {
 			type: new GraphQLList(StandupType),
