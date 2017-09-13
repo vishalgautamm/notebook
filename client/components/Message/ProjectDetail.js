@@ -29,7 +29,7 @@ class ProjectDetail extends Component {
 				</p>
 
 				<div className="project-Comments">
-					<CommentList />
+					<CommentList comments={standup.notes} />
 				</div>
 			</div>
 		)
