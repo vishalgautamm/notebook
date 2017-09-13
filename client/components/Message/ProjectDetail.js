@@ -3,6 +3,8 @@ import { graphql } from 'react-apollo'
 import { Link } from 'react-router'
 import { emojify } from 'react-emojione'
 
+import CommentList from '../Comment/CommentList'
+
 import fetchProjectById from '../../queries/fetchProjectById'
 
 class ProjectDetail extends Component {
@@ -27,7 +29,7 @@ class ProjectDetail extends Component {
 				</p>
 
 				<div className="project-Comments">
-					<h2>Comments List</h2>
+					<CommentList />
 				</div>
 			</div>
 		)
