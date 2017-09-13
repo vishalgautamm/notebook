@@ -2,15 +2,15 @@ import gql from 'graphql-tag'
 
 export default gql`
 	mutation newProject(
-		$name: String
-		$proj: String
+		$memberName: String
+		$project: String
 		$workYesterday: String
 		$workToday: String
 		$impediment: String
 	) {
 		addMeetingNote(
-			memberName: $name
-			project: $proj
+			memberName: $memberName
+			project: $project
 			workYesterday: $workYesterday
 			workToday: $workToday
 			impediment: $impediment

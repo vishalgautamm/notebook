@@ -28,6 +28,7 @@ class ProjectList extends Component {
 		return (
 			<div className="projectlist">
 				<div className="projectsCollection">{this.renderProjects()}</div>
+				<Link to="/projects/new"> Add a new Project </Link>
 			</div>
 		)
 	}
