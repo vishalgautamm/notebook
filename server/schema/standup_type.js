@@ -4,6 +4,7 @@ const { GraphQLObjectType, GraphQLString, GraphQLID, GraphQLList } = graphql
 const NoteType = require('./note_type')
 const Standup = mongoose.model('standup')
 const timeStamp = require('../utils/')
+const moment = require('moment')
 
 const StandupType = new GraphQLObjectType({
 	name: 'StandupType',
@@ -16,7 +17,7 @@ const StandupType = new GraphQLObjectType({
 		impediment: { type: GraphQLString },
 		createdOn: {
 			type: GraphQLString,
-			resolve: ({ createdOn }) => timeStamp(createdOn)
+			resolve: ({ createdOn }) => moment(createdOn).format('MMMM Do YYYY')
 		},
 		notes: {
 			// TO-DO: Need to define NoteType

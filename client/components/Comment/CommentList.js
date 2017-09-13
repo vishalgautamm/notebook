@@ -1,15 +1,23 @@
 import React, { Component } from 'react'
 
 class CommentList extends Component {
-	// renderComments() {
-	//
-	// }
+	// This function will render all the comments, which is passed from the Project Detail component
+	renderComments() {
+		return this.props.comments.map(({ id, likes, content, createdOn }) => {
+			return (
+				<li key={id} className="CommentList-Items">
+					{content} - {createdOn}
+					<div className="CommentList-VoteBox">Likes: {likes}</div>
+				</li>
+			)
+		})
+	}
 
 	render() {
-		console.log(this.props)
 		return (
 			<div className="CommentList">
-				<h2> Comments List </h2>
+				<p> Comments List </p>
+				<ul className="CommentList-Collection">{this.renderComments()}</ul>
 			</div>
 		)
 	}
