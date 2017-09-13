@@ -4,6 +4,12 @@ export default gql`
 	mutation addComment($content: String, $messageId: ID!) {
 		addNoteToMeetingNote(content: $content, messageId: $messageId) {
 			id
+			notes {
+				id
+				content
+				likes
+				createdOn
+			}
 		}
 	}
 `
