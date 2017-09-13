@@ -4,6 +4,7 @@ import { Link } from 'react-router'
 import { emojify } from 'react-emojione'
 
 import CommentList from '../Comment/CommentList'
+import CommentCreate from '../Comment/CommentCreate'
 
 import fetchProjectById from '../../queries/fetchProjectById'
 
@@ -31,6 +32,7 @@ class ProjectDetail extends Component {
 				<div className="project-Comments">
 					<CommentList comments={standup.notes} />
 				</div>
+				<CommentCreate messageId={this.props.params.id} />
 			</div>
 		)
 	}
