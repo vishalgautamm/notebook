@@ -1,12 +1,15 @@
 const graphql = require('graphql')
 const { GraphQLObjectType, GraphQLString, GraphQLID } = graphql
 const mongoose = require('mongoose')
+const AuthService = require('../services/auth')
 
 // Note and Standup Models - Mongo
 const Note = mongoose.model('note')
 const Standup = mongoose.model('standup')
+const User = mongoose.model('user')
 
 // Note and Stand Types - GraphQL
+const UserType = require('./user_type')
 const NoteType = require('./note_type')
 const StandupType = require('./standup_type')
 
@@ -23,6 +26,59 @@ const StandupType = require('./standup_type')
 const mutation = new GraphQLObjectType({
 	name: 'Mutation',
 	fields: {
+		signup: {
+			type: UserType,
+			args: {
+				email: { type: GraphQLString },
+				password: { type: GraphQLString }
+			},
+			resolve(parentVal, { email, password }, req) {
+				return AuthService.signup({ email, password, req })
+			}
+		},
+		logout: {
+			type: UserType,
+			resolve(parentVal, args, req) {
+				return AuthService.logout(req)
+			}
+		},
+
+		login: {
+			type: UserType,
+			args: {
+				email: { type: GraphQLString },
+				password: { type: GraphQLString }
+			},
+			resolve(parentVal, { email, password }, req) {
+				return AuthService.login({ email, password, req })
+			}
+		},
+
+		// Users can add standUp meeting notes
+		addStandUpMeetingNote: {
+			type: UserType,
+			args: {
+				memberName: { type: GraphQLString },
+				project: { type: GraphQLString },
+				workYesterday: { type: GraphQLString },
+				workToday: { type: GraphQLString },
+				impediment: { type: GraphQLString },
+				messageId: { type: GraphQLID }
+			},
+			resolve: (
+				_,
+				{ memberName, project, workYesterday, workToday, impediment, messageId }
+			) =>
+				User.addMeeting(
+					messageId,
+					memberName,
+					project,
+					workYesterday,
+					workToday,
+					impediment,
+					messageId
+				)
+		},
 		// Users can create their own meeting note
 		addMeetingNote: {
 			type: StandupType,

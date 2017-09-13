@@ -3,6 +3,10 @@ const Schema = mongoose.Schema
 
 // Standup Meeting Notes Schema definition.
 const StandupSchema = new Schema({
+	user: {
+		type: Schema.Types.ObjectId,
+		ref: 'user'
+	},
 	memberName: String,
 	project: String,
 	workYesterday: String,
