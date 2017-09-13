@@ -10,5 +10,15 @@ Signin and Signup(Auth) Basic Styling
 .Signin-header,
 .Signup-header {
 	font-size: 2.2rem;
+}
+
+.Auth-Message {
 	margin-bottom: 1rem;
+	color: #b655de;
+}
+
+.Auth-Message:hover,
+.Auth-Message:active {
+	color: #8e44ad;
+	transition: color, 0.5s;
 }

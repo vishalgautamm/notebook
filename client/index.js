@@ -38,13 +38,13 @@ const Root = () => (
 	<ApolloProvider client={client}>
 		<Router history={hashHistory}>
 			<Route path="/" component={App}>
-				{/* <IndexRoute component={Landing} /> */}
-				<Route path="projects" component={ProjectList} />
+				<IndexRoute component={Landing} />
+				<Route path="projects" component={requireAuth(ProjectList)} />
 				<Route path="login" component={Signin} />
 				<Route path="signup" component={Signup} />
-				<Route path="projects/new" component={ProjectCreate} />
-				<Route path="projects/:id" component={ProjectDetail} />
-				<Route path="/landing" component={requireAuth(Landing)} />
+				<Route path="projects/new" component={requireAuth(ProjectCreate)} />
+				<Route path="projects/:id" component={requireAuth(ProjectDetail)} />
+				<Route path="/dashboard" component={requireAuth(Landing)} />
 			</Route>
 		</Router>
 	</ApolloProvider>

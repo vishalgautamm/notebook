@@ -21,7 +21,7 @@ class LoginForm extends Component {
 		// console.log(this.props, nextProps)
 		if (!this.props.data.user && nextProps.data.user) {
 			// redirect to dashboard!!
-			hashHistory.push('/landing')
+			hashHistory.push('/projects')
 		}
 	}
 
@@ -42,7 +42,10 @@ class LoginForm extends Component {
 		return (
 			<div className="Signin-Component">
 				<h3 className="Signin-Header">Login</h3>
-				<Link to="/signup"> Need an Account? </Link>
+				<Link className="Auth-Message" to="/signup">
+					{' '}
+					Need an Account?{' '}
+				</Link>
 				<AuthForm
 					errors={this.state.errors}
 					onSubmit={this.onSubmit.bind(this)}
