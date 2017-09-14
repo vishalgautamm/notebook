@@ -2976,6 +2976,10 @@ invert-kv@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
 
+ionicons@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-3.0.0.tgz#40b8daf4fd7a31150bd002160f66496e22a98c3c"
+
 ipaddr.js@1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.4.0.tgz#296aca878a821816e5b85d0a285a99bcff4582f0"
@@ -4931,7 +4935,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.6:
+prop-types@15.5.10, prop-types@^15.5.10, prop-types@^15.5.6:
   version "15.5.10"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
   dependencies:
@@ -5069,6 +5073,14 @@ react-apollo@^0.9.0:
 react-emojione@^3.1.10:
   version "3.1.10"
   resolved "https://registry.yarnpkg.com/react-emojione/-/react-emojione-3.1.10.tgz#2c233446c61f676381358b0573ea8d39b71e45b8"
+
+react-ionicons@^1.5.9:
+  version "1.5.9"
+  resolved "https://registry.yarnpkg.com/react-ionicons/-/react-ionicons-1.5.9.tgz#3822f406b1cb0ea43ffd35b942d5d4bb4286cdba"
+  dependencies:
+    prop-types "15.5.10"
+    react "15.4.2"
+    react-dom "15.4.2"
 
 react-router@^3.0.2:
   version "3.0.5"

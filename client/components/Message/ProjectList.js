@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Ionicon from 'react-ionicons'
 import { graphql } from 'react-apollo'
 import { Link } from 'react-router'
 import fetchProjects from '../../queries/fetchProjects'
@@ -16,16 +17,32 @@ class ProjectList extends Component {
 		return this.props.data.standups.map(
 			({ id, project, memberName, createdOn }) => {
 				return (
-					<ul key={id} className="projectlist-item">
-						<li className="projectlist-item-title">
-							<h1>
-								<Link to={`/projects/${id}`}>{project}</Link>
-							</h1>
-						</li>
-						<li className="projectlist-item-author">{memberName}</li>
-						<li className="projectlist-item-createdOn">{createdOn}</li>
-						<button onClick={() => this.onDelete(id)}>Delete</button>
-					</ul>
+					<div className="projectlist-item" key={id}>
+						<ul>
+							<li className="projectlist-item-title">
+								<h1>
+									<Link to={`/projects/${id}`}>{project}</Link>
+								</h1>
+							</li>
+							<li className="projectlist-item-author">{memberName}</li>
+							<li className="projectlist-item-createdOn">{createdOn}</li>
+							<li className="projectList-item-readmore">
+								<Link to={`/projects/${id}`}>Read more...</Link>
+							</li>
+						</ul>
+						<ul>
+							<li
+								className="projectlist-item-tarsh"
+								onClick={() => this.onDelete(id)}
+							>
+								<Ionicon
+									icon="ion-android-delete"
+									color="#8e44ad"
+									fontSize="2rem"
+								/>
+							</li>
+						</ul>
+					</div>
 				)
 			}
 		)
@@ -37,11 +54,14 @@ class ProjectList extends Component {
 		return (
 			<div className="projectlist">
 				<div className="projectlist-Header">
-					<h2>Global Feed</h2>
+					<h3>Global Feed</h3>
 				</div>
 				<div className="projectsCollection">
 					{this.renderProjects()}
-					<Link to="/projects/new"> Add a new Project </Link>
+
+					<button className="btn-new">
+						<Link to="/projects/new"> New Message </Link>
+					</button>
 				</div>
 			</div>
 		)
