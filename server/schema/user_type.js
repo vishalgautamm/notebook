@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const moment = require('moment')
+const getFirst = require('../utils/').getFirst
 
 const {
 	GraphQLObjectType,
@@ -14,6 +15,10 @@ const UserType = new GraphQLObjectType({
 	name: 'UserType',
 	fields: {
 		id: { type: GraphQLID },
+		username: {
+			type: GraphQLString,
+			resolve: ({ username }) => getFirst(username)
+		},
 		email: { type: GraphQLString },
 		createdOn: {
 			type: GraphQLString,

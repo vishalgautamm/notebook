@@ -6,6 +6,7 @@ const Schema = mongoose.Schema
 // Every user has an email and password.  The password is not stored as
 // plain text - see the authentication helpers below.
 const UserSchema = new Schema({
+	username: String,
 	email: String,
 	password: String,
 	createdOn: { type: Date, default: Date.now },

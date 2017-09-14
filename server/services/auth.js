@@ -42,10 +42,10 @@ passport.use(
 )
 
 // Creates a new user account.
-function signup({ email, password, req }) {
-	const user = new User({ email, password })
-	if (!email || !password) {
-		throw new Error('You must provide an email and password.')
+function signup({ username, email, password, req }) {
+	const user = new User({ username, email, password })
+	if (!username || !email || !password) {
+		throw new Error('You must provide a username, email and password.')
 	}
 
 	return User.findOne({ email })

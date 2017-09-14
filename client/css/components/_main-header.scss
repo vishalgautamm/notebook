@@ -31,20 +31,9 @@ a:hover {
 	list-style: none;
 }
 
-/*a:active,
-a:hover {
-	color: #a562c1;
-	transition: color 0.3s;
-}*/
-
-li.selected a {
-	color: #4f4f4f;
-	font-weight: bold;
+.nav-item .userName {
+	color: #2980b9;
 }
-
-/*****
-Style Layout
-*****/
 
 @media screen and (max-width: 400px) {
 	.nav li {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import AuthForm from './AuthForm'
+import SignupFormm from './SignupFormm'
 import mutation from '../../mutations/signUp'
 import query from '../../queries/currentUser'
 import { graphql } from 'react-apollo'
@@ -18,14 +18,14 @@ class SignupForm extends Component {
 		// // when the component re-renders
 		if (!this.props.data.user && nextProps.data.user) {
 			// redirect to dashboard!!
-			hashHistory.push('/')
+			hashHistory.push('/projects')
 		}
 	}
 
-	onSubmit({ email, password }) {
+	onSubmit({ username, email, password }) {
 		this.props
 			.mutate({
-				variables: { email, password },
+				variables: { username, email, password },
 				refetchQueries: [{ query }]
 			})
 			.catch(res => {
@@ -42,7 +42,7 @@ class SignupForm extends Component {
 					{' '}
 					Have an account?{' '}
 				</Link>
-				<AuthForm
+				<SignupFormm
 					errors={this.state.errors}
 					onSubmit={this.onSubmit.bind(this)}
 				/>

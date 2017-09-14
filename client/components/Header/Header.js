@@ -23,19 +23,22 @@ class Header extends Component {
 		}
 
 		return user ? (
-			<div>
-				<li className="nav-item selected item-1">
-					<Link to="/">Home</Link>
+			<div className="Header nav">
+				<li className="nav-item">
+					<p>
+						sup' <span className="userName">{user.username} </span>{' '}
+					</p>
 				</li>
+
 				<li className="nav-item item-2">
-					<Link to="/projects">Projects</Link>
+					<Link to="/projects">Message Board</Link>
 				</li>
-				<li>
+				<li className="nav-item item-3">
 					<a onClick={this.onLogoutClick.bind(this)}>Logout</a>
 				</li>
 			</div>
 		) : (
-			<div>
+			<div className="Header nav">
 				<li className="nav-item item-3">
 					<Link to="/signup"> Sign up</Link>
 				</li>
@@ -54,7 +57,7 @@ class Header extends Component {
 							<Link to="/"> Notebook </Link>
 						</div>
 
-						<ul className="Header nav">{this.renderButtons()}</ul>
+						<ul>{this.renderButtons()}</ul>
 					</header>
 				</div>
 			</nav>

@@ -29,11 +29,12 @@ const mutation = new GraphQLObjectType({
 		signup: {
 			type: UserType,
 			args: {
+				username: { type: GraphQLString },
 				email: { type: GraphQLString },
 				password: { type: GraphQLString }
 			},
-			resolve(parentVal, { email, password }, req) {
-				return AuthService.signup({ email, password, req })
+			resolve(parentVal, { username, email, password }, req) {
+				return AuthService.signup({ username, email, password, req })
 			}
 		},
 		logout: {

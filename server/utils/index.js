@@ -8,7 +8,10 @@ const timeStamp = (postedDate, lang = 'en') =>
 		round: true
 	})} ago`
 
-module.exports = timeStamp
+// Takees a username/ list of string and returns the first string
+const getFirst = str => str.split(' ')[0].toLowerCase()
 
-const date = '2017-09-10T18:01:48.349Z'
-console.log(timeStamp(date))
+module.exports = {
+	timeStamp,
+	getFirst
+}
