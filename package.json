@@ -6,7 +6,8 @@
 	"scripts": {
 		"dev": "nodemon index.js --ignore client",
 		"test": "npm-run-all --parallel test:model test:schema test:client",
-		"test:model": "nodemon --exec './node_modules/mocha/bin/mocha server/models/__tests_ -R min'",
+		"test:model":
+			"nodemon --exec './node_modules/mocha/bin/mocha server/models/__tests_ -R min'",
 		"test:schema": "./node_modules/mocha/bin/mocha server/schema/__tests_",
 		"test:client": "jest"
 	},
@@ -32,7 +33,6 @@
 		"graphql-tag": "^2.4.2",
 		"html-webpack-plugin": "^2.26.0",
 		"humanize-duration": "^3.10.1",
-		"ionicons": "^3.0.0",
 		"lodash": "^4.17.4",
 		"mocha": "^3.5.2",
 		"moment": "^2.18.1",
@@ -43,8 +43,8 @@
 		"react": "15.4.2",
 		"react-apollo": "^0.9.0",
 		"react-dom": "15.4.2",
-		"react-emojione": "^3.1.10",
 		"react-ionicons": "^1.5.9",
+		"react-markdown": "^2.5.0",
 		"react-router": "^3.0.2",
 		"sass-loader": "^6.0.6",
 		"style-loader": "^0.13.1",

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { graphql } from 'react-apollo'
 import { Link } from 'react-router'
-import { emojify } from 'react-emojione'
+import ReactMarkdown from 'react-markdown'
 
 import CommentList from '../Comment/CommentList'
 import CommentCreate from '../Comment/CommentCreate'
@@ -25,9 +25,11 @@ class ProjectDetail extends Component {
 				<p className="projectDetail-author">{standup.memberName}</p>
 				<p>Work Today: {standup.workToday}</p>
 				<p> Work Yesterday: {standup.workYesterday} </p>
-				<p className="projectDetail-impediments">
-					impediments: {emojify(standup.impediment)}
-				</p>
+				<br />
+				<ReactMarkdown
+					className="projectDetail-impediments"
+					source={standup.impediment}
+				/>
 
 				<div className="project-Comments">
 					<CommentList comments={standup.notes} />

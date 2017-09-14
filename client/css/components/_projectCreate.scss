@@ -27,4 +27,14 @@
 		font-weight: 300;
 		font-size: 1.3rem;
 	}
+
+	textarea {
+		@extend input;
+		resize: vertical;
+
+		&,
+		::placeholder {
+			padding-top: 1rem;
+		}
+	}
 }

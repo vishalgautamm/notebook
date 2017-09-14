@@ -37,7 +37,7 @@ Project List Styling
 
 		&:first-child {
 			padding-top: 1rem;
-			border-top: 1px solid $studio;
+			border-top: 1px solid $projectList-first-child;
 		}
 
 		&::after {

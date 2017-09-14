@@ -45,9 +45,6 @@ class ProjectCreate extends Component {
 				>
 					<input
 						required
-						validationErrors={{
-							isDefaultRequiredValue: 'Please state your name'
-						}}
 						placeholder="Name"
 						value={this.state.memberName}
 						onChange={event =>
@@ -76,9 +73,10 @@ class ProjectCreate extends Component {
 						onChange={event => this.setState({ workToday: event.target.value })}
 					/>
 
-					<input
+					<textarea
 						required
-						placeholder="Impediment"
+						type="text"
+						placeholder="Impediment (in markdown)"
 						value={this.state.impediment}
 						onChange={event =>
 							this.setState({ impediment: event.target.value })}

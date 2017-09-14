@@ -19,7 +19,8 @@
 			align-self: flex-end;
 		}
 
-		& Input {
+		& Input,
+		& textarea {
 			width: 100%;
 		}
 	}
