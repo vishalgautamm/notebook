@@ -1,0 +1,26 @@
+.projectCreate {
+	margin: 0 10%;
+	padding: 0.5rem 1rem;
+	display: flex;
+	flex-direction: column;
+
+	.projectCreate-input {
+		display: flex;
+		margin: 0 10%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&:first-child {
+			margin-top: 3rem;
+		}
+
+		:last-child {
+			align-self: flex-end;
+		}
+
+		& Input {
+			width: 100%;
+		}
+	}
+}

@@ -1,41 +1,7 @@
-.projectCreate {
-	margin: 0 10%;
-	padding: 0.5rem 1rem;
-	display: flex;
-	flex-direction: column;
-}
-
-.projectCreate-backbtn,
-.projectCreate-submitbtn {
-	cursor: pointer;
-	margin: 1.25rem 0;
-	font-size: 0.7rem;
-	width: 5.75rem;
-	height: 1.5rem;
-	background-color: #ffffff;
-	color: #000000;
-	border: 1px solid #27ae60;
-	border-radius: 1rem;
-}
-
-.projectCreate-submitbtn {
-	display: none;
-}
-
-.projectCreate-backbtn a,
-.projectCreate-submitbtn a {
-	color: #000000;
-}
-
 .projectCreate-input input {
 	width: 300px;
 	height: 40px;
 	margin-bottom: 10px;
 	border: 1px solid $studio;
 	border-radius: 5px;
-}
-
-.projectCreate-info {
-	font-size: 0.625rem;
-	color: grey;
 }

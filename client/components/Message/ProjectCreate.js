@@ -39,12 +39,6 @@ class ProjectCreate extends Component {
 	render() {
 		return (
 			<div className="projectCreate">
-				<Link to="/projects">
-					<button className="btn-back">Back</button>
-				</Link>
-
-				<h3> Create a new message </h3>
-
 				<form
 					className="projectCreate-input"
 					onSubmit={this.onSubmit.bind(this)}
@@ -59,7 +53,6 @@ class ProjectCreate extends Component {
 						onChange={event =>
 							this.setState({ memberName: event.target.value })}
 					/>
-					<br />
 
 					<input
 						required
@@ -67,7 +60,6 @@ class ProjectCreate extends Component {
 						value={this.state.project}
 						onChange={event => this.setState({ project: event.target.value })}
 					/>
-					<br />
 
 					<input
 						required
@@ -76,7 +68,6 @@ class ProjectCreate extends Component {
 						onChange={event =>
 							this.setState({ workYesterday: event.target.value })}
 					/>
-					<br />
 
 					<input
 						required
@@ -84,7 +75,6 @@ class ProjectCreate extends Component {
 						value={this.state.workToday}
 						onChange={event => this.setState({ workToday: event.target.value })}
 					/>
-					<br />
 
 					<input
 						required
@@ -93,10 +83,8 @@ class ProjectCreate extends Component {
 						onChange={event =>
 							this.setState({ impediment: event.target.value })}
 					/>
-					<br />
-					<button className="projectCreate-submitbtn">Submit</button>
+					<button className="btn-success">Submit</button>
 				</form>
-				<p className="projectCreate-info"> Press enter to submit </p>
 			</div>
 		)
 	}
