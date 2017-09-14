@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link, hashHistory } from 'react-router'
+import Ionicon from 'react-ionicons'
 import { graphql } from 'react-apollo'
 import query from '../../queries/currentUser'
 import mutation from '../../mutations/logout'
@@ -24,6 +25,9 @@ class Header extends Component {
 
 		return user ? (
 			<div className="Header nav">
+				<Link to="/projects/new">
+					<Ionicon icon="ion-android-create" color="#8e44ad" />
+				</Link>
 				<li className="nav-item">
 					<p>
 						sup' <span className="userName">{user.username} </span>{' '}

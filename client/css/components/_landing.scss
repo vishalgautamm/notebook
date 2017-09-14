@@ -45,22 +45,3 @@ Basic Styling
 	margin-top: 0.625rem;
 	font-size: 1.25rem;
 }
-
-.Landing-Main-Button .btn {
-	cursor: pointer;
-	margin: 1.25rem 0;
-	font-size: 1rem;
-	width: 8.75rem;
-	height: 2.5rem;
-	background-color: #27ae60;
-	color: #f6f6f6;
-	border: 0;
-	border-radius: 1rem;
-}
-
-.Landing-Main-Button .btn:hover {
-	color: #fff;
-	background-color: #219251;
-	border: 0.0625rem solid #acacac;
-	transition: background-color 0.5s;
-}

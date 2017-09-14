@@ -58,10 +58,9 @@ class ProjectList extends Component {
 				</div>
 				<div className="projectsCollection">
 					{this.renderProjects()}
-
-					<button className="btn-new">
-						<Link to="/projects/new"> New Message </Link>
-					</button>
+					<Link to="/projects/new">
+						<button className="btn-success">New Message</button>{' '}
+					</Link>
 				</div>
 			</div>
 		)

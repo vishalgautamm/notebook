@@ -39,9 +39,10 @@ class ProjectCreate extends Component {
 	render() {
 		return (
 			<div className="projectCreate">
-				<button className="projectCreate-backbtn">
-					<Link to="/projects">Back</Link>
-				</button>
+				<Link to="/projects">
+					<button className="btn-back">Back</button>
+				</Link>
+
 				<h3> Create a new message </h3>
 
 				<form
