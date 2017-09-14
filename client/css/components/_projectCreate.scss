@@ -1,7 +1,30 @@
-.projectCreate-input input {
-	width: 300px;
-	height: 40px;
-	margin-bottom: 10px;
-	border: 1px solid $studio;
-	border-radius: 5px;
+.projectCreate-input {
+	input {
+		width: 30rem;
+		height: 50px;
+		padding-left: 1.5rem;
+		margin-bottom: 10px;
+		border: 1px solid rgba(#777777, 0.25);
+		border-radius: 0.5rem;
+		font-size: 1.2rem;
+		font-weight: 300;
+		text-decoration: none;
+		&:first-child {
+			font-size: 1.5rem;
+			padding-left: 2.5rem;
+			height: 60px;
+		}
+
+		&:focus {
+			outline: none;
+			border: 2px solid rgba(#9b59b6, 0.34);
+			color: rgba(27, 27, 27, 0.63);
+		}
+	}
+
+	::placeholder {
+		color: rgba(#000000, 0.1);
+		font-weight: 300;
+		font-size: 1.3rem;
+	}
 }
