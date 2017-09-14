@@ -36,8 +36,13 @@ class ProjectList extends Component {
 		}
 		return (
 			<div className="projectlist">
-				<div className="projectsCollection">{this.renderProjects()}</div>
-				<Link to="/projects/new"> Add a new Project </Link>
+				<div className="projectlist-Header">
+					<h2>Global Feed</h2>
+				</div>
+				<div className="projectsCollection">
+					{this.renderProjects()}
+					<Link to="/projects/new"> Add a new Project </Link>
+				</div>
 			</div>
 		)
 	}

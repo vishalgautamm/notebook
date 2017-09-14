@@ -27,7 +27,7 @@
 	border: 2px solid rgba(#9b59b6, 0.34);
 	color: rgba(27, 27, 27, 0.63);
 }
-::placeholder {
+.input-field ::placeholder {
 	color: rgba(#000000, 0.44);
 	font-weight: 300;
 	font-size: 1.3rem;

@@ -4,7 +4,29 @@ Basic Styling
 
 .Landing-Main {
 	/*background-color: #8e44ad;*/
-	background-color: #66317c;
+	// background: #41295a; /* fallback for old browsers */
+	// background: -webkit-linear-gradient(
+	// 	to right,
+	// 	#41295a,
+	// 	#2f0743
+	// ); /* Chrome 10-25, Safari 5.1-6 */
+	// background: linear-gradient(
+	// 	to right,
+	// 	#41295a,
+	// 	#2f0743
+	// ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #42275a; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#42275a,
+		#734b6d
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#42275a,
+		#734b6d
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	// background-color: #66317c;
 	width: 100%;
 	height: 400px;
 }

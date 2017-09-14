@@ -44,9 +44,15 @@ class ProjectCreate extends Component {
 				</button>
 				<h3> Create a new message </h3>
 
-				<form className="projectCreate-input">
+				<form
+					className="projectCreate-input"
+					onSubmit={this.onSubmit.bind(this)}
+				>
 					<input
 						required
+						validationErrors={{
+							isDefaultRequiredValue: 'Please state your name'
+						}}
 						placeholder="Name"
 						value={this.state.memberName}
 						onChange={event =>
@@ -87,13 +93,9 @@ class ProjectCreate extends Component {
 							this.setState({ impediment: event.target.value })}
 					/>
 					<br />
-					<button
-						onClick={this.onSubmit.bind(this)}
-						className="projectCreate-submitbtn"
-					>
-						Submit
-					</button>
+					<button className="projectCreate-submitbtn">Submit</button>
 				</form>
+				<p className="projectCreate-info"> Press enter to submit </p>
 			</div>
 		)
 	}

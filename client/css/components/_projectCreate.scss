@@ -18,6 +18,10 @@
 	border-radius: 1rem;
 }
 
+.projectCreate-submitbtn {
+	display: none;
+}
+
 .projectCreate-backbtn a,
 .projectCreate-submitbtn a {
 	color: #000000;
@@ -29,4 +33,9 @@
 	margin-bottom: 10px;
 	border: 1px solid $studio;
 	border-radius: 5px;
+}
+
+.projectCreate-info {
+	font-size: 0.625rem;
+	color: grey;
 }
