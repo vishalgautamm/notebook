@@ -28,3 +28,12 @@
 	flex-direction: row;
 	justify-content: space-between;
 }
+
+.CommentList-VoteBox {
+	display: flex;
+	width: 10%;
+	justify-content: space-around;
+}
+.CommentList-Likes {
+	margin-right: 0.5rem;
+}

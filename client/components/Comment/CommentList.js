@@ -29,8 +29,10 @@ class CommentList extends Component {
 						<p className="CommentList-Created">{createdOn} </p>
 					</div>
 					<div className="CommentList-VoteBox">
-						{likes}
-						<button onClick={() => this.onLike(id, likes)}>Like</button>
+						<p className="CommentList-Likes"> {likes} </p>
+						<button onClick={() => this.onLike(id, likes)} className="btn-like">
+							+
+						</button>
 					</div>
 				</li>
 			)
@@ -40,7 +42,6 @@ class CommentList extends Component {
 	render() {
 		return (
 			<div className="CommentList">
-				<p> Comments List </p>
 				<ul className="CommentList-Collection">{this.renderComments()}</ul>
 			</div>
 		)

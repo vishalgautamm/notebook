@@ -1,16 +1,19 @@
 // Styling
 .projectDetail-Content {
 	.projectDetail-ProjectMember {
-		background: #000;
+		background: rgba(#8e44ad, 0.77);
 		color: #fff;
+		padding-top: 0.5rem;
 		padding-left: 1rem;
-		border-top-left-radius: 0.4rem;
+		border-top-left-radius: 0.625rem;
+		border-bottom-right-radius: 0.625rem;
 	}
 }
 
 // Layout
 .projectDetail {
-	margin: 0 10%;
+	background: rgba(169, 62, 244, 0.03);
+	margin: 1rem 10%;
 	padding: 0.5rem 1rem;
 
 	.projectDetail-ProjectMember {
