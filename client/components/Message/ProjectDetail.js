@@ -16,20 +16,24 @@ class ProjectDetail extends Component {
 			<div />
 		) : (
 			<div className="projectDetail">
-				<Link className="projectDetail-backButton" to="/projects">
-					{' '}
-					Back{' '}
+				<Link to="/projects">
+					<button className="btn-success"> Back </button>
 				</Link>
 
-				<h2>{standup.project}</h2>
-				<p className="projectDetail-author">{standup.memberName}</p>
-				<p>Work Today: {standup.workToday}</p>
-				<p> Work Yesterday: {standup.workYesterday} </p>
-				<br />
-				<ReactMarkdown
-					className="projectDetail-impediments"
-					source={standup.impediment}
-				/>
+				<div className="projectDetail-Content">
+					<div className="projectDetail-ProjectMember">
+						<h2>{standup.project}</h2>
+						<p className="projectDetail-author">{standup.memberName}</p>
+						{/* <p>Work Today: {standup.workToday}</p> */}
+						{/* <p> Work Yesterday: {standup.workYesterday} </p> */}
+						<br />
+					</div>
+
+					<ReactMarkdown
+						className="projectDetail-impediments"
+						source={standup.impediment}
+					/>
+				</div>
 
 				<div className="project-Comments">
 					<CommentList comments={standup.notes} />

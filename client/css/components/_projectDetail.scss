@@ -1,6 +1,26 @@
+// Styling
+.projectDetail-Content {
+	.projectDetail-ProjectMember {
+		background: #000;
+		color: #fff;
+		padding-left: 1rem;
+		border-top-left-radius: 0.4rem;
+	}
+}
+
+// Layout
 .projectDetail {
 	margin: 0 10%;
 	padding: 0.5rem 1rem;
+
+	.projectDetail-ProjectMember {
+		margin-bottom: 1rem;
+	}
+
+	.projectDetail-Content {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .projectDetail-backButton {
