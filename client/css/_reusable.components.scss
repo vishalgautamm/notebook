@@ -22,16 +22,9 @@
 	border-radius: 50%;
 	border: none;
 	// name of the color: Emerald (flatUI colors)
-	background-color: rgba(#2ecc71, 0.71);
+	background-color: #fff;
 	color: #fff;
 	font-size: 1rem;
-}
-
-.btn-like:hover {
-	background-color: rgba(#2ecc71, 0.81);
-	border: 1px solid #2ecc71;
-	color: rgba(#ffffff, 0.83);
-	transition: background-color, border, color 0.5s;
 }
 
 .btn:hover,

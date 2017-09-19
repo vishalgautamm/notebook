@@ -2,6 +2,7 @@ import './CommentList.css'
 import React, { Component } from 'react'
 import { graphql } from 'react-apollo'
 import { emojify } from 'react-emoji'
+import Ionicon from 'react-ionicons'
 import likeComment from '../../mutations/likeComment'
 
 class CommentList extends Component {
@@ -30,9 +31,9 @@ class CommentList extends Component {
 					</div>
 					<div className="CommentList-VoteBox">
 						<p className="CommentList-Likes"> {likes} </p>
-						<button onClick={() => this.onLike(id, likes)} className="btn-like">
-							+
-						</button>
+						<p onClick={() => this.onLike(id, likes)} className="btn-like">
+							<Ionicon icon="ion-thumbsup" color="#8e44ad" fontSize="2rem" />
+						</p>
 					</div>
 				</li>
 			)
