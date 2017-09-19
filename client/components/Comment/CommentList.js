@@ -1,5 +1,7 @@
+import './CommentList.css'
 import React, { Component } from 'react'
 import { graphql } from 'react-apollo'
+import { emojify } from 'react-emoji'
 import likeComment from '../../mutations/likeComment'
 
 class CommentList extends Component {
@@ -22,9 +24,12 @@ class CommentList extends Component {
 		return this.props.comments.map(({ id, likes, content, createdOn }) => {
 			return (
 				<li key={id} className="CommentList-Items">
-					{content} - {createdOn}
+					<div className="CommentList-Container">
+						<p className="CommentList-Content"> {emojify(content)} </p>
+						<p className="CommentList-Created">{createdOn} </p>
+					</div>
 					<div className="CommentList-VoteBox">
-						Likes: {likes}
+						{likes}
 						<button onClick={() => this.onLike(id, likes)}>Like</button>
 					</div>
 				</li>
