@@ -1,3 +1,5 @@
+import './CommentCreate.css'
+
 import React, { Component } from 'react'
 import { graphql } from 'react-apollo'
 
