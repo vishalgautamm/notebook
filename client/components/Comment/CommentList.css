@@ -1,0 +1,30 @@
+/* CommentList Styling */
+.CommentList-Items {
+	margin-top: 1rem;
+}
+
+.CommentList-Created {
+	font-size: 0.625rem;
+	color: rgb(182, 182, 182);
+}
+
+.CommentList-VoteBox {
+	color: orange;
+}
+/* Comment List Layout */
+.CommentList {
+	width: 100%;
+	margin-top: 1rem;
+	padding-left: 1rem;
+}
+
+.CommentList-Collection {
+	display: flex;
+	flex-direction: column;
+}
+
+.CommentList-Items {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
