@@ -1,4 +1,5 @@
-### Notebook is a modern tool that allows users to easily create and share meeting notes with their co-workers.
+![NoteBook](./assets/static/images/logo.png)
+
 ### An open source note sharing engine, with Mongo + Express + GraphQL backend and React + Apollo frontend
 
 ## Features
