@@ -6,6 +6,10 @@ import Ionicon from 'react-ionicons'
 import likeComment from '../../mutations/likeComment'
 
 class CommentList extends Component {
+	componentDidMount() {
+		document.title = 'Comments'
+	}
+
 	onLike(id, likes) {
 		this.props.mutate({
 			variables: { id },

@@ -18,6 +18,10 @@ class ProjectCreate extends Component {
 		}
 	}
 
+	componentDidMount() {
+		document.name = 'Create a Node'
+	}
+
 	onSubmit(event) {
 		event.preventDefault()
 
@@ -45,7 +49,7 @@ class ProjectCreate extends Component {
 				>
 					<input
 						required
-						placeholder="Name"
+						placeholder="Your name"
 						value={this.state.memberName}
 						onChange={event =>
 							this.setState({ memberName: event.target.value })}
@@ -76,7 +80,7 @@ class ProjectCreate extends Component {
 					<textarea
 						required
 						type="text"
-						placeholder="Impediment (in markdown)"
+						placeholder="Notes (in markdown)"
 						value={this.state.impediment}
 						onChange={event =>
 							this.setState({ impediment: event.target.value })}

@@ -24,8 +24,8 @@ class ProjectDetail extends Component {
 					<div className="projectDetail-ProjectMember">
 						<h2>{standup.project}</h2>
 						<p className="projectDetail-author">{standup.memberName}</p>
-						{/* <p>Work Today: {standup.workToday}</p> */}
-						{/* <p> Work Yesterday: {standup.workYesterday} </p> */}
+						<p>Work Today: {standup.workToday}</p>
+						<p> Work Yesterday: {standup.workYesterday} </p>
 						<br />
 					</div>
 

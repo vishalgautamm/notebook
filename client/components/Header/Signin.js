@@ -14,6 +14,10 @@ class LoginForm extends Component {
 		this.state = { errors: [] }
 	}
 
+	componentDidMount() {
+		document.title = 'Sign in'
+	}
+
 	componentWillUpdate(nextProps) {
 		// this.props // the old, current set of props
 		// nextProps // the next set of props that will be in place

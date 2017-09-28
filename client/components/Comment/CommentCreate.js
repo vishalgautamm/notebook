@@ -5,13 +5,6 @@ import { graphql } from 'react-apollo'
 
 import createComment from '../../mutations/createComment'
 
-function validate(comment) {
-	// true means invalid, so our conditions got reversed
-	return {
-		content: comment.length < 10
-	}
-}
-
 class CommentCreate extends Component {
 	constructor(props) {
 		super(props)
