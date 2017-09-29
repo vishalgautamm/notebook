@@ -7,8 +7,8 @@
 Here are the planned features and their status:
 
 - [x] Login / Signup
-  - At present, we only support email auth. We will support a lot more OAuth services in the future
-  - For now, we've got Semaphore pushing to
+  - At present, we only support email auth. We will support OAuth services in the future
+- [ ] OAuth
 - [x] Notes
 - [x] Comments
 - [x] Like Comments
