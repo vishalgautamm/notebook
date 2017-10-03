@@ -26,4 +26,4 @@ Here are the planned features and their status:
 
 ## License
 
-Notebook is [MIT Licensed](./LICENSE).## License
+Notebook is [MIT Licensed](https://github.com/vishalgautamm/notebook/blob/master/License.md).## License
